@@ -105,6 +105,11 @@
             android:summary="@string/adv_app_list_sum"
             android:dependency="adv_per_app"/>
 
-    </PreferenceCategory>
+   
+        <EditTextPreference
+        android:key="adv_domain_list"
+        android:title="@string/adv_domain_list"
+        android:summary="@string/adv_domain_list_sum"/>
+</PreferenceCategory>
 
 </PreferenceScreen>
