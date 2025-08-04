@@ -107,6 +107,15 @@ public class Profile {
         mPref.edit().putString(key("applist"), list).apply();
     }
 
+
+        public String getDomainList() {
+        return mPref.getString(key(Constants.PREF_ADV_DOMAIN_LIST), "");
+    }
+
+    public void setDomainList(String list) {
+        mPref.edit().putString(key(Constants.PREF_ADV_DOMAIN_LIST), list).apply();
+    }
+
     public boolean hasIPv6() {
         return mPref.getBoolean(key("ipv6"), false);
     }
@@ -153,6 +162,8 @@ public class Profile {
                 .remove(key("appbypass"))
                 .remove(key("applist"))
                 .remove(key("ipv6"))
+                        .remove(key(Constants.PREF_ADV_DOMAIN_LIST))
+
                 .remove(key("udp"))
                 .remove(key("udpgw"))
                 .remove(key("auto"))
