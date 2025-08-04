@@ -32,6 +32,9 @@
     <string name="adv_app_bypass_sum">Enable this option to bypass selected apps instead of proxying them</string>
     <string name="adv_app_list">App List</string>
     <string name="adv_app_list_sum">Enter one app\'s package name in one line. See Settings -> Apps for package names of apps.</string>
+        <string name="adv_domain_list">Domain List</string>
+    <string name="adv_domain_list_sum">Enter one domain pattern per line (e.g. *.ru or example.com)</string>
+
 
     <string name="prof_add">Add Profile</string>
     <string name="prof_del">Delete Profile</string>
